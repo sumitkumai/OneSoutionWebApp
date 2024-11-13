@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.hero {
+  background: url("https://www.w3schools.com/w3images/forest.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #f39c12;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+.about,
+.services,
+.features,
+.testimonials,
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h2,
+.services h2,
+.features h2,
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card,
+.feature-card {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  width: 30%;
+}
+
+.service-card h3,
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  width: 45%;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .service-card,
+  .feature-card,
+  .testimonial {
+    width: 100%;
+  }
+}
